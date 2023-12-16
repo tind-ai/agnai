@@ -16,7 +16,7 @@ export default FAQ
 const faq = `
 
 ### Are my responses filtered?
-No, Agnaistic does not make any attempt to filter your responses.
+No, tind.ai does not make any attempt to filter your responses.
 
 ### The response from the character keeps getting cut off mid-sentence. What can I do?
 There are a few things you can try:
@@ -43,7 +43,7 @@ When you specify the Web URL, make sure it is *publicly accessible* using a serv
 Yes, In your **Settings -> Voice Settings** we support a variety of text-to-speech services.
 
 ### Can I customise the UI?
-Yes, you can change some elements of Agnaistic in your **Settings -> UI Settings**.
+Yes, you can change some elements of tind.ai in your **Settings -> UI Settings**.
 
 ### I came from "some other site", how can I get my bot to talk like it was on that site?
 All frontends behave a little differently. You can tweak how your character behaves by modifying your **Prompt Template** in your **Preset**.
