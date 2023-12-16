@@ -71,7 +71,7 @@ export const BooksTab: Component = (props) => {
           <>
             {' '}
             <a
-              href="https://github.com/agnaistic/agnai/blob/dev/instructions/memory.md"
+              href="https://github.com/tind-ai/agnai/blob/dev/instructions/memory.md"
               target="_blank"
               class="link"
             >
@@ -183,7 +183,7 @@ const ImportMemoryModal: Component<ImportProps> = (props) => {
         fieldName="json"
         label="JSON File"
         accept="text/json,application/json"
-        helperText="Only Agnaistic exported memory books are currently supported."
+        helperText="Only tind.ai exported memory books are currently supported."
         required
         onUpdate={updateJson}
       />
