@@ -86,19 +86,9 @@ const HomePage: Component = () => {
         <div class="home-cards">
           <TitleCard type="bg" title="Guides" class="" center ariaRole="region" ariaLabel="Guides">
             <div class="flex flex-wrap justify-center gap-2">
-              <a>
-                <Pill inverse onClick={() => setSub(Sub.OpenAI)} ariaRole="link">
-                  OpenAI
-                </Pill>
-              </a>
-              <A href="/guides/novel">
-                <Pill inverse>NovelAI</Pill>
+              <A class="link" href="https://tind.ai/faq/">
+                <Pill inverse>FAQ</Pill>
               </A>
-              <a>
-                <Pill inverse onClick={() => setSub(Sub.Horde)} ariaRole="link">
-                  Horde
-                </Pill>
-              </a>
               <A href="/guides/memory">
                 <Pill inverse>Memory Book</Pill>
               </A>
@@ -107,12 +97,11 @@ const HomePage: Component = () => {
 
           <TitleCard type="bg" title="Links" center ariaRole="region" ariaLabel="Links">
             <div class="flex flex-wrap justify-center gap-2">
-              <a href="/discord" target="_blank">
-                <Pill inverse>tind.ai Discord</Pill>
-              </a>
-
-              <A href="https://github.com/agnaistic/agnai" target="_blank">
-                <Pill inverse>GitHub</Pill>
+              <A class="link" href="https://tind.ai/subscriptions-2/">
+                <Pill inverse>Subscriptions</Pill>
+              </A>
+              <A class="link" href="https://tind.ai/privacy-policy-2/">
+                <Pill inverse>Privacy Policy</Pill>
               </A>
             </div>
           </TitleCard>
@@ -126,13 +115,12 @@ const HomePage: Component = () => {
           <div class="mb-2 flex justify-center text-xl font-bold" aria-hidden="true">
             Getting Started
           </div>
-          <div class="flex flex-col items-center gap-2 leading-6">
+          <div class="flex flex-col gap-2 leading-6">
             <p>
-              Already have OpenAI, NovelAI, GooseAI, Scale, Claude? Head to the{' '}
-              <A class="link" href="/settings?tab=ai">
-                Settings Page
-              </A>{' '}
-              and configure your AI service.
+              First time here? Head to the{' '}
+              <A class="link" href="/chats">
+                Chats Page
+              </A>.{' '}
             </p>
           </div>
         </Card>
@@ -339,32 +327,27 @@ const Features: Component = () => (
       <div id="homeNotableFeats" class="flex justify-center text-xl font-bold" aria-hidden="true">
         Notable Features
       </div>
-      <div class="flex flex-col gap-2 leading-6">
-        <p>
-          <b class="highlight">tind.ai</b> is completely free to use. It is free to register. Your
-          data will be kept private and you can permanently delete your data at any time. We take
-          your privacy very seriously.
-        </p>
-        <p>
-          <b class="highlight">Register</b> to have your data available on all of your devices.
-        </p>
-        <p>Chat with multiple users and multiple characters at the same time</p>
-        <p>
-          Create <b class="highlight">Memory Books</b> to give your characters information about
-          their world.
-        </p>
-        <p>
-          <b class="highlight">Image generation</b> - Use Horde, NovelAI or your own Stable
-          Diffusion server.
-        </p>
-        <p>
-          <b class="highlight">Voice</b> - Give your characters a voice and speak back to them.
-        </p>
-        <p>
-          <b class="highlight">Custom Presets</b> - Completely customise the Generation settings
-          used to generate your responses.
-        </p>
-      </div>
+          <div class="flex flex-col gap-2 leading-6">
+            <p>
+              <b class="highlight">Your data</b> will be kept private and you can permanently delete your data at any time.
+              We take your privacy very seriously.
+            </p>
+            <p>
+              <b class="highlight">Register</b> to have your data available on all of your devices.
+            </p>
+            <p>Chat with multiple users and multiple characters at the same time.</p>
+            <p>
+              Create <b class="highlight">Memory Books</b> to give your characters information about
+              their world.
+            </p>
+            <p>
+              <b class="highlight">Voice</b> - Give your characters a voice and speak back to them.
+            </p>
+            <p>
+              <b class="highlight">Custom Presets</b> - Completely customise the Generation settings
+              used to generate your responses.
+            </p>
+          </div>
     </section>
   </Card>
 )
